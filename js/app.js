@@ -33,6 +33,13 @@ teamMates.push(
   }
 );
 
-for (let element in teamMates) {
-  console.log(teamMates[element]);
+const container = document.querySelector(`.container`);
+const membersList = document.createElement(`ul`);
+container.appendChild(membersList);
+
+for (i = 0; i < teamMates.length; i++) {
+  const li = document.createElement(`li`);
+  membersList.appendChild(li);
+  li.innerHTML =
+    `${teamMates[i].name}` + ` ${teamMates[i].role}` + ` ${teamMates[i].image}`;
 }
