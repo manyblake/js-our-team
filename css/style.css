@@ -2,13 +2,64 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 ul {
   list-style-type: none;
 }
 
+body {
+  background-color: #f5f5f1;
+}
+
+img {
+  width: 100%;
+}
+
+.main-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 4rem 0 2rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.secondary-title {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
 .container {
   max-width: 900px;
   margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  flex-basis: calc((100% - 4rem) / 3);
+  text-align: center;
+  background-color: white;
+}
+
+.card__title {
+  padding-top: 1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card__description {
+  padding-bottom: 1rem;
+  font-size: 0.8rem;
 }
