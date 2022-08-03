@@ -43,3 +43,13 @@ for (i = 0; i < teamMates.length; i++) {
   li.innerHTML =
     `${teamMates[i].name}` + ` ${teamMates[i].role}` + ` ${teamMates[i].image}`;
 }
+
+function createImgtagFromString(string) {
+  const img = document.createElement("img");
+  img.src = `./img/${string}`;
+  return img;
+}
+
+for (i = 0; i < teamMates.length; i++) {
+  container.appendChild(createImgtagFromString(teamMates[i].image));
+}
